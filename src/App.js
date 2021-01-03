@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// import { Header, Footer } from "./components";
+import ReactMarkdown from "react-markdown";
+import { lesson_one } from "./data/markdown";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="home">
+      {/* <Header /> */}
+
+      <div id="content">
+        <ReactMarkdown source={lesson_one} />
+      </div>
+
+      {/* <Footer /> */}
     </div>
   );
-}
+};
 
 export default App;
