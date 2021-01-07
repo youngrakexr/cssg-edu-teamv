@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap");
+/* feel free to go on google fonts and change this to another font! */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
 
 /* == UI COMPONENTS == */
 /* buttons */
@@ -12,7 +13,8 @@ button,
   display: inline-block;
   text-decoration: none;
   font-size: 1rem;
-  font-family: "Space Mono", monospace;
+  /* if you change the font, don't forget to change it here too! */
+  font-family: 'Quicksand', sans-serif;
   padding: .6rem 1.2rem;
   vertical-align: middle;
   text-align: center;
@@ -53,6 +55,7 @@ html {
   padding-right: 1.5rem;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  font-size: 18px;
 }
 
 div {
