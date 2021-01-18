@@ -7,11 +7,16 @@ The goals for you this week are as follows:
 - get comfortable with git
 - play around with customizing your site (font, css, info, etc)
 
+**Sat, Feb 6th recap**:
+- [Presentation Link](https://docs.google.com/presentation/d/1NdJ7YkG0gI1Y_6fuSNYmAz_eMBrlkNwAqs-E_RvkiOY/edit?usp=sharing)
+- [Recorded zoom video](https://unc.zoom.us/rec/share/TWcz4SirF7QXMxlsDc_zuk0j1clwYltHOrixitCyKf5E1BUZzUSZuXLpZacKTv2q.h69RCLWCeDhWwPE4) (passcode: @bGG5G$m) 
+
 ## Setting up your repo
 
 Requirements:
 
 - npm
+- [node.js](https://nodejs.org/en/)
 - [git](https://git-scm.com/)
 - [visual studio code](https://code.visualstudio.com/) or any code editor your comfortable with
 
@@ -28,9 +33,10 @@ For those of you who didn't know, github allows you to host a website and all yo
 
 1. Inside the repo, click **View** in the top menu bar again, but this time select **terminal** (or you can press COMMAND + j)
 2. VERY IMPORTANT: enter the following command and paste your copied url at the end: **git remote add myrepo _url_**. For example, I would enter: **git remote add myrepo https://github.com/chiazo/chiazo.github.io.git**
-3. run the following command: **npm run install**
+3. run the following command: **npm install**
 4. next, open the **package.json** file. This is a super important file for web developers. Here is where you'll define some basics about the app and also see all the commands you can run in the **scripts** section. But first, change the line saying **homepage** & replace **cssg-edu-team** with your github username. For example, mine would look like this: "homepage": "http://chiazo.github.io/" because (again) **chiazo** is my github username! :)
 5. from there, you can also change the line saying "name" to be something other than **cssg-edu-team**. Once you're done, open your terminal so we can begin checking out some git commands!!!
+6. To see live changes to the app, run **npm run start** in the terminal!
 
 ## Git Basics + Deploying!
 
@@ -57,7 +63,7 @@ In the following week, make the website you're own! Change the css + add informa
 
 Your tasks:
 
-- Edit at least 2 files and upload those changes to github
+- Edit at least 2 files and upload those changes to github (tell us about you!)
 - Find 2 personal sites with super cool designs (in your opinion) from software engineers / designers / people in the tech world. We'll be using this as inspo to learn about CSS in the future!
 `;
 
