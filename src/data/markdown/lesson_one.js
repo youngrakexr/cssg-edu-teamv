@@ -28,6 +28,7 @@ For those of you who didn't know, github allows you to host a website and all yo
 4. You will be redirected to the new repo on your account. Click the **settings** tab button and rename the repository name as follows: **[insert-your-github-username].github.io**. For example, my repository name will become: **chiazo.github.io** because **chiazo** is my username on github!
 5. Once done, click the **code** tab button and then click the green **code** button. Make sure the https option is selected and click the clipboard icon to copy the repository link.
 6. Open visual studio code (or any code editor you have), click **View** in the top menu bar, then click **Command Palette**. In the pop up, search for **Git: Clone** and paste the link to the repo that you copied. Press enter on your keyboard and choose a location on your computer to store the repository locally. Once you're done, open the repo in a new window!
+7. If your github isn't connected to visual studio code, click **View** in the top menu bar, then click **Command Palette**. In the pop up, search for **Github Pull Requests: Sign in to Github** and follow the instructions.
 
 ## Setting up the app
 
@@ -55,7 +56,8 @@ Git is basically a tool to see any changes you made, make copies of your work so
 2. enter either **git add .** (this will add every single change you've made to the "stage" so it can be ready to be uploaded) or type **git add package.json** to specifically add this 1 file to the stage
 3. now enter **git commit -m** and in the blank space leave a brief message explaining what you changed in quotation marks. Here's an example: git commit -m "renamed app in package.json file"
 4. now we're going to upload our changes to github. enter the command **git push myrepo master**. This is saying _upload my locally saved files from the **master** branch to the online repo nicknamed **myrepo**_. If you'll remember from above, we nicknamed our repo **myrepo**! Always use this command to upload your changes (writing only git push will probably be denied)
-5. The final step!!! Run the command **npm run deploy**. This will publish your website to github pages. Check it out using the following link: https://[your-github-username].github.io
+5. Run the command **npm run deploy**. This will publish your website to github pages. Check it out using the following link: https://[your-github-username].github.io
+6. The final step!!! Go to your repo's settings, scroll down to nearly the bottom and under the Github Pages header, change source to **gh-pages**. Save! 
 
 # What's next?
 
