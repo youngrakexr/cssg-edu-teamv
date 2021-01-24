@@ -8,7 +8,7 @@ import App from "./App";
 import "./index.css";
 
 const Index = () => (
-  <div class="main">
+  <div className="main">
     <BrowserRouter>
       <Header />
       <div>
