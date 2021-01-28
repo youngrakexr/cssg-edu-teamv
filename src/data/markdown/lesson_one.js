@@ -66,7 +66,7 @@ In the following week, make the website you're own! Change the css + add informa
 Your tasks:
 
 - Edit at least 2 files and upload those changes to github (tell us about you!)
-- Find 2 personal sites with super cool designs (in your opinion) from software engineers / designers / people in the tech world. We'll be using this as inspo to learn about CSS in the future!
+- Find 2 personal sites with super cool designs (in your opinion) from software engineers / designers / people in the tech world. We'll be using this as inspo to learn about CSS in the future! Use [https://www.bestfolios.com/](https://www.bestfolios.com/) as a starting place!
 `;
 
 export default lesson_one;
