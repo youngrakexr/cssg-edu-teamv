@@ -7,6 +7,10 @@ Welcome to week 2! The goals for you are as follows:
 - figure out how to use a CSS framework (Bootstrap)
 - begin learning about React Hooks (useState) & event handling
 
+**Sat, Feb 13th recap**:
+- [Presentation Link](https://drive.google.com/file/d/1F05H71cQuH0P7jS7y_fZV6YfoSnCmZHr/view?usp=sharing)
+- [Recorded zoom video](https://unc.zoom.us/rec/share/LhKh2nQnwGEC1Yvt7Bm5cZQNBubQvjS5oqDVLwgIAbETahPcpqgNjnKzEDMGAWq-.B4EyFglM74XP-ZCA) (passcode: t@JSFp8&) 
+
 ## Setting up your repo
 
 1. Navigate to [this link](https://github.com/cssg-edu-team/todo-app) to access the todo app's repo and click the **fork** button in the top right corner.
