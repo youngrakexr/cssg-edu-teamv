@@ -14,6 +14,10 @@ const Lessons = () => {
       path: "/lesson-three",
       name: "Lesson 3: Start Fetching Data Asynchronously",
     },
+    {
+      path: "/lesson-four",
+      name: "Lesson 4: Introducing Firebase!",
+    },
   ];
 
   return (

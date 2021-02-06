@@ -7,7 +7,12 @@ import App from "./App";
 import Gallery from "./Gallery";
 import Lessons from "./Lessons";
 import Lesson from "./Lesson";
-import { lesson_one, lesson_two, lesson_three } from "./data/markdown";
+import {
+  lesson_one,
+  lesson_two,
+  lesson_three,
+  lesson_four,
+} from "./data/markdown";
 
 import "./index.css";
 
@@ -27,6 +32,9 @@ const Index = () => (
         </Route>
         <Route path="/lesson-three">
           <Lesson lesson={lesson_three} />
+        </Route>
+        <Route path="/lesson-four">
+          <Lesson lesson={lesson_four} />
         </Route>
       </div>
       <Footer />

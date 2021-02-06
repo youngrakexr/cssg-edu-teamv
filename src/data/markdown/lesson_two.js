@@ -22,7 +22,7 @@ Welcome to week 2! The goals for you are as follows:
 
 1. Inside the repo, click **View** in the top menu bar again, but this time select **terminal** (or you can press COMMAND + j)
 2. VERY IMPORTANT: enter the following command and paste your copied url at the end: **git remote add myrepo _url_**. For example, I would enter: **git remote add myrepo https://github.com/chiazo/todo-app**
-3. run the following command: **npm run install**
+3. run the following command: **npm install**
 4. next, open the **package.json** file. Change the line saying **homepage** & replace **cssg-edu-team** with your github username. For example, mine would look like this: "homepage": "http://chiazo.github.io/todo-app" because **chiazo** is my github username! :)
 5. follow the commented instructions in the code!
 
