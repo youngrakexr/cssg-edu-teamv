@@ -14,8 +14,8 @@ button,
   text-decoration: none;
   font-size: 1rem;
   /* if you change the font, don't forget to change it here too! */
-  font-family: 'Quicksand', sans-serif;
-  padding: .6rem 1.2rem;
+  font-family: "Quicksand", sans-serif;
+  padding: 0.6rem 1.2rem;
   vertical-align: middle;
   text-align: center;
   font-weight: 500;
@@ -64,7 +64,6 @@ div {
 
 /* body */
 
-
 body {
   box-sizing: border-box;
   min-height: 100%;
@@ -108,15 +107,9 @@ h4 {
 .container {
   max-width: 1200px;
   width: 100%;
-  text-align: center;
-  justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 0;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
   transition: all 0.3s ease;
 }
 
@@ -137,6 +130,7 @@ h4 {
 .masthead {
   margin: 3rem 0;
   border-bottom: 1px solid black;
+  min-width: 100%;
 }
 
 .footer {
@@ -149,4 +143,8 @@ h4 {
   padding: 0.5rem 1rem;
   text-align: center;
   background-color: #5a7913;
+}
+
+.nav-item {
+  list-style: none;
 }
