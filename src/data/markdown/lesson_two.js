@@ -27,12 +27,12 @@ Welcome to week 2! The goals for you are as follows:
 5. follow the commented instructions in the code!
 
 ## Background Info + Resources
-### Class Components
-React is all about functions inside of functions. For this todo app, we have two class components.
+### Functional Components
+React is all about functions inside of functions. For this todo app, we have two functional components.
 1. **App** -> this will contain the input field to add tasks & is essentially our home page
 2. **Task** -> this will contain information about each individual task & will be contained within our App component
 
-A common theme you will see is that some of our functions and data will be defined in the parent class component (App) and passed down to the child component (Task). Most importantly, this will allow you to handle data at the top level, in one spot instead of inside each separate child class.
+A common theme you will see is that some of our functions and data will be defined in the parent component (App) and passed down to the child component (Task). Most importantly, this will allow you to handle data at the top level, in one spot instead of inside each separate child class.
 
 In our case, you will define two functions in the App class:
 1. **handleInput**: takes in an **event** parameter & saves event.target.value as currTask
@@ -41,7 +41,7 @@ In our case, you will define two functions in the App class:
 Find more info [here](https://reactjs.org/blog/2015/12/18/react-components-elements-and-instances.html)!
 
 ### Props & Event Handling
-Because Class Components are essentially functions, you can pass them parameters. These parameters are known as **props**.
+Because components are essentially functions, you can pass them parameters. These parameters are known as **props**.
 Every prop you pass will be stored in object of **prop**erties, that you can access inside the class itself. Here's an example:
 
 **<Task name="Clean my room"/>** corresponds to
