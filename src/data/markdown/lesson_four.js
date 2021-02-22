@@ -25,14 +25,56 @@ Welcome to week 4! The goals for you are as follows:
 
 ## Setting up Firebase
 
-1. run the following command: **npm install -g firebase-tools**
-2. run this command next: **firebase login**. From here, choose a Google account you have / create one where will host our database. Remember which account you chose!
+1. run the following command: **npm install -g firebase-tools**. If it doesn't work, try **sudo npm install -g firebase-tools**.
+2. run this command next: **firebase login**. 
+    - Select **Y** allowing Firebase to collect CLI usage.
+    - From here, you'll be redirected to your browser. Choose a Google account you have / create one where will host our database. Remember which account you chose!
+    - Click **Allow** to give Firebase permissions to access your Google account.
+    - Close the window!
+3. Go to the [Firebase Console](https://console.firebase.google.com/u/0/) in your browser & make sure you're logged into the same Google account from before.
+    - Click **Add project** in the top left.
+    - Enter **note-app** as your project name.
+    - Turn off "Enable Google Analytics for this project"
+    - Click **Continue** when your project is ready.
+    - Click the settings gear (Project Settings) in the top left of the website.
+    - Scroll down to the "Your Apps" header.
+    - Click the icon that looks like this: **</>**
+4. Set up your webapp!
+    - Enter an app name ("Note App" is fine)
+    - Make sure to click **Also set up Firebase Hosting for this app**
+    - Click **Register App**
+    - Press **Next** to skip the Add Firebase SDK step.
+    - Keep clicking until you hit **Continue to console.**
+    - Return back to VSCode.
+5. run this command in the terminal: **firebase init**
+    - Using your down arrow & space key, select both **Database** and **Hosting** in your terminal, then press **Enter**
+    - Press Enter to select **Use an exisiting project** 
+    - Find the project called **note-app** & hit enter
+6. Enter **Y** to set up your Realtime Database when asked.
+    - Select **us-central1** (it really doesn't matter which data center you choose)
+    - Hit enter to skip the question asking about Realtime Database Security Rules
+    - Hit enter to skip the question asking about public directory
+    - Enter "Y" for the question about configuring a single-page app
+    - Enter "Y" for the question about configuring a single-page app
+    - Enter "Y" for the question about configuring a single-page app
+    - Enter "Y" for the question about automatic builds and deploys with Github
+    - Enter "N" for the question about overwriting the public/index.html file
+7. You'll be redirected to Github to give firebase permissions to setup deploys. 
+    - Click the **Grant** button next to your username. 
+    - When you see "Firebase CLI GitHub Login Successful", close the window & return to VSCode.
+8. In your terminal, enter the name of your username and your repo name in this pattern: ***username/repo-name*. In this case, mine would be **chiazo/note-app** because _chiazo_ is my username and _note-app_ is the repo name.
+    - Enter "Y" for the question about setting up a workflow before every deploy.
+    - Hit Enter to skip the question about the specific script run before every deploy.
+    - Enter "Y" for the question about automatic deployment.
+    - Hit Enter to skip the question about the name of the Github branch.
+
+    You're done setting up Firebase!
 
 ## Background Info + Resources
 
-### Firebase CLI
-
 ### Firebase Database Structure
+
+Firebase is a NoSQL database. In this specific case, this means it will act like a series of nested objects! The most important concepts and methods you need to know are the following:
 
 
 ## Deploy your Note App!
