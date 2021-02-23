@@ -1,12 +1,18 @@
 const lesson_four = `# Lesson 4: Introducing Firebase!
 
-Welcome to week 4! The goals for you are as follows:
+Welcome to week 4 (and your final individual project)! The goals for you are as follows:
 
 - build a note app using firebase ([here is an example](https://cssg-edu-team.github.io/note-app/))
 - understanding NoSQL database structure
 - continue handling user input
 - continue using a CSS framework (Bootstrap)
 - continue learning about React Hooks (useEffect) & asyncronous calls
+
+**Sat, March 6th Recap:**
+
+- [Presentation Link](https://docs.google.com/presentation/d/1BlVYOZhm7wXBKru7Tgmf9DQzM3zuPzBh8rTCKvQ7uj8/edit?usp=sharing)
+- [Recorded zoom video](https://unc.zoom.us/rec/share/G6YzeLfex1oJtT_aCDl9Ys1oLK499P06BmoVb_NedHk_XGdX7wAlMEJwXAdMYeTC.wAjsW9a5G3f3MfUQ) (Passcode: gtuD#2rT) 
+
 
 ## Setting up your repo
 
@@ -81,11 +87,19 @@ Firebase is a NoSQL database. In this specific case, this means it will act like
 
 So this time, we will actually be deploying to both Firebase and Github Pages! :) 
 
+### Github Pages
+
 1. enter **git status** in your terminal to see any changes you made.
 2. enter **git add .**
 3. now enter **git commit -m** and in the blank space leave a brief message explaining what you changed in quotation marks.
 4. now we're going to upload our changes to github. enter the command **git push myrepo master**.
 5. The final step!!! Run the command **npm run deploy**. This will publish your website to github pages. Check it out using the following link: https://[your-github-username].github.io/note-app
+
+### Firebase Hosting
+
+Then, deploy your site to firebase using these commands: 
+1. **npm run build**
+2. **firebase deploy**
 
 # What's next?
 

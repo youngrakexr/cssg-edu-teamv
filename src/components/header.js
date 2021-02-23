@@ -13,7 +13,7 @@ const Header = () => {
         <h1 className="site-title">CSSG Education Team</h1>
       </Link>
 
-      <div>
+      <div className="nav-links">
         {pages.map(({ name, path }) => (
           <Link to={path}>
             <li className="nav-item">{name}</li>

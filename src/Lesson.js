@@ -5,7 +5,6 @@ const Lesson = ({ lesson }) => {
     <div className="home">
       <div id="content">
         <ReactMarkdown source={lesson} />
-        <hr />
       </div>
     </div>
   );
