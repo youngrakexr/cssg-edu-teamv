@@ -31,13 +31,7 @@ Welcome to week 4 (and your final individual project)! The goals for you are as 
 
 ## Setting up Firebase
 
-1. run the following command: **npm install -g firebase-tools**. If it doesn't work, try **sudo npm install -g firebase-tools**.
-2. run this command next: **firebase login**. 
-    - Select **Y** allowing Firebase to collect CLI usage.
-    - From here, you'll be redirected to your browser. Choose a Google account you have / create one where will host our database. Remember which account you chose!
-    - Click **Allow** to give Firebase permissions to access your Google account.
-    - Close the window!
-3. Go to the [Firebase Console](https://console.firebase.google.com/u/0/) in your browser & make sure you're logged into the same Google account from before.
+1. Go to the [Firebase Console](https://console.firebase.google.com/u/0/) in your browser & make sure you remember the Google account you use to host your database.
     - Click **Add project** in the top left.
     - Enter **note-app** as your project name.
     - Turn off "Enable Google Analytics for this project"
@@ -45,35 +39,39 @@ Welcome to week 4 (and your final individual project)! The goals for you are as 
     - Click the settings gear (Project Settings) in the top left of the website.
     - Scroll down to the "Your Apps" header.
     - Click the icon that looks like this: **</>**
-4. Set up your webapp!
+2. Set up your webapp!
     - Enter an app name ("Note App" is fine)
-    - Make sure to click **Also set up Firebase Hosting for this app**
+    - Ignore **Also set up Firebase Hosting for this app**
     - Click **Register App**
     - Press **Next** to skip the Add Firebase SDK step.
     - Keep clicking until you hit **Continue to console.**
     - Return back to VSCode.
-5. run this command in the terminal: **firebase init**
-    - Using your down arrow & space key, select both **Database** and **Hosting** in your terminal, then press **Enter**
-    - Press Enter to select **Use an exisiting project** 
-    - Find the project called **note-app** & hit enter
-6. Enter **Y** to set up your Realtime Database when asked.
-    - Select **us-central1** (it really doesn't matter which data center you choose)
-    - Hit enter to skip the question asking about Realtime Database Security Rules
-    - Hit enter to skip the question asking about public directory
-    - Enter "Y" for the question about configuring a single-page app
-    - Enter "Y" for the question about configuring a single-page app
-    - Enter "Y" for the question about configuring a single-page app
-    - Enter "Y" for the question about automatic builds and deploys with Github
-    - Enter "N" for the question about overwriting the public/index.html file
-7. You'll be redirected to Github to give firebase permissions to setup deploys. 
-    - Click the **Grant** button next to your username. 
-    - When you see "Firebase CLI GitHub Login Successful", close the window & return to VSCode.
-8. In your terminal, enter the name of your username and your repo name in this pattern: ***username/repo-name*. In this case, mine would be **chiazo/note-app** because _chiazo_ is my username and _note-app_ is the repo name.
-    - Enter "Y" for the question about setting up a workflow before every deploy.
-    - Hit Enter to skip the question about the specific script run before every deploy.
-    - Enter "Y" for the question about automatic deployment.
-    - Hit Enter to skip the question about the name of the Github branch.
+3. In Firebase Console, click **Authentication** on the left panel.
+    - Click **Sign-in method** and enable **Email/Password**
+    - Click **Users** and then click **Add User**
+    - Enter an email & password that you'll use to add notes (and disable editing notes for everyone viewing your app)
+4. In Firebase Console, click **Realtime Database** on the left panel.
+    - Click **"Create Database"**
+    - Click **Rules** and change read and write to the following:
+        {".read": true,
+        ".write": "auth != null" }
+    - Click "Publish Changes"
+5. In Firebase Console, click **Project Settings** on the left panel.
+    - Scroll down to the "Your Apps" header.
+    - Under "Firebase SDK snippet", click the **config** button
+    - Keep this window open so you can copy and paste the values from the **firebaseConfig** object into our local project
+6. In VSCode, add a **.env** file inside of **note-app** (**VERY IMPORTANT!** make sure it's not inside of any other folder, it should be on the same level as .gitignore & package.json)
+    -  Following this template, fill out the secret values from the **firebaseConfig** object (without quotes):
+   
+    **REACT_APP_API_KEY=<insert key>**  
+   **REACT_APP_AUTH_DOMAIN=<insert auth domain>**    
+   **REACT_APP_DB_URL=<insert db url>**    
+   **REACT_APP_PROJECT_ID=<insert project id>**   
+   **REACT_APP_STORAGE_BUCKET=<insert storage bucket>**    
+   **REACT_APP_MESSAGING_SENDER_ID=<insert sender id>**    
+   **REACT_APP_APP_ID=<insert app id>**    
 
+   - this **.env** is already added to the .gitignore file so it will never be uploaded to github (which prevents these secret values from being exposed)
     You're done setting up Firebase!
 
 ## Background Info + Resources
@@ -82,24 +80,16 @@ Welcome to week 4 (and your final individual project)! The goals for you are as 
 
 Firebase is a NoSQL database. In this specific case, this means it will act like a series of nested objects! The most important concepts and methods you need to know are the following:
 
+- .ref(<db-name>): this returns a reference to a particular table in your database!
+- .on("value", fxn): this method allows you to access certain values in the database & do something them using a function passed as a parameter.
 
 ## Deploy your Note App!
-
-So this time, we will actually be deploying to both Firebase and Github Pages! :) 
-
-### Github Pages
 
 1. enter **git status** in your terminal to see any changes you made.
 2. enter **git add .**
 3. now enter **git commit -m** and in the blank space leave a brief message explaining what you changed in quotation marks.
 4. now we're going to upload our changes to github. enter the command **git push myrepo master**.
 5. The final step!!! Run the command **npm run deploy**. This will publish your website to github pages. Check it out using the following link: https://[your-github-username].github.io/note-app
-
-### Firebase Hosting
-
-Then, deploy your site to firebase using these commands: 
-1. **npm run build**
-2. **firebase deploy**
 
 # What's next?
 
