@@ -23,7 +23,7 @@ Requirements:
 For those of you who didn't know, github allows you to host a website and all your projects for free. For example, [my personal site](https://chiazo.github.io) is completely handled through Github & runs on [Jekyll](https://jekyllrb.com/). Our goal here is for you to fork this repo and deploy it on your own github.
 
 1. Create a github account & log in!
-2. Navigate to [this link](https://github.com/cssg-edu-team/cssg-edu-team.github.io) to access this site's repo and click the **fork** button in the top right corner. Forking is a way of copying a github repo while still being able to receive any updates made to it.
+2. Navigate to [this link](https://github.com/cssg-edu-team/cssg-edu-team.github.io/tree/dc179689a6d5b93517963f1fc5a92b4743665c31) to access this site's repo and click the **fork** button in the top right corner. Forking is a way of copying a github repo while still being able to receive any updates made to it.
 3. Choose your personal github account as the destination for the repo.
 4. You will be redirected to the new repo on your account. Click the **settings** tab button and rename the repository name as follows: **[insert-your-github-username].github.io**. For example, my repository name will become: **chiazo.github.io** because **chiazo** is my username on github!
 5. Once done, click the **code** tab button and then click the green **code** button. Make sure the https option is selected and click the clipboard icon to copy the repository link.
