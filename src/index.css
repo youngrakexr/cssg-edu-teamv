@@ -157,3 +157,22 @@ h4 {
 .nav-links a {
   margin: 0 1rem;
 }
+
+.hof {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hof > div {
+  margin: 3rem;
+  padding: 2rem;
+  border: 1px solid green;
+}
+
+.hof img {
+  border: 6px double rgb(125, 153, 125);
+}
+
+.hof h4 {
+  margin-bottom: 0;
+}
