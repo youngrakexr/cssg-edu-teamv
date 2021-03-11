@@ -12,6 +12,7 @@ import {
   lesson_two,
   lesson_three,
   lesson_four,
+  lesson_five,
 } from "./data/markdown";
 
 import "./index.css";
@@ -35,6 +36,9 @@ const Index = () => (
         </Route>
         <Route path="/lesson-four">
           <Lesson lesson={lesson_four} />
+        </Route>
+        <Route path="/lesson-five">
+          <Lesson lesson={lesson_five} />
         </Route>
       </div>
       <Footer />

@@ -4,7 +4,7 @@ Welcome to week 4 (and your final individual project)! The goals for you are as 
 
 - build a note app using firebase ([here is an example](https://cssg-edu-team.github.io/note-app/))
 - understanding NoSQL database structure
-- continue handling user input
+- continue handling user input & user authentification
 - continue using a CSS framework (Bootstrap)
 - continue learning about React Hooks (useEffect) & asyncronous calls
 
@@ -61,8 +61,8 @@ Welcome to week 4 (and your final individual project)! The goals for you are as 
     - Scroll down to the "Your Apps" header.
     - Under "Firebase SDK snippet", click the **config** button
     - Keep this window open so you can copy and paste the values from the **firebaseConfig** object into our local project
-6. In VSCode, add a **.env** file inside of **note-app** (**VERY IMPORTANT!** make sure it's not inside of any other folder, it should be on the same level as .gitignore & package.json)
-    -  Following this template, fill out the secret values from the **firebaseConfig** object (without quotes):
+6. In VSCode, add a **.env** file inside of **note-app** (**VERY IMPORTANT!** make sure it's not inside of any other folder, it should be on the same level as **.gitignore & package.json**)
+    -  Following this template, paste the following text in your **.env** file and fill out the secret values from the **firebaseConfig** object (without quotes around any of the values):
    
     **REACT_APP_API_KEY=<insert key>**  
    **REACT_APP_AUTH_DOMAIN=<insert auth domain>**    
@@ -72,8 +72,9 @@ Welcome to week 4 (and your final individual project)! The goals for you are as 
    **REACT_APP_MESSAGING_SENDER_ID=<insert sender id>**    
    **REACT_APP_APP_ID=<insert app id>**    
 
-   - this **.env** is already added to the .gitignore file so it will never be uploaded to github (which prevents these secret values from being exposed)
-    You're done setting up Firebase!
+   - this **.env** is already added to the **.gitignore** file so it will never be uploaded to github (which prevents these secret values from being exposed)
+    
+   ### You're done setting up Firebase!
 
 ## Background Info + Resources
 
@@ -82,7 +83,7 @@ Welcome to week 4 (and your final individual project)! The goals for you are as 
 Firebase is a NoSQL database. In this specific case, this means it will act like a series of nested objects! The most important concepts and methods you need to know are the following:
 
 - .ref(<db-name>): this returns a reference to a particular table in your database!
-- .on("value", fxn): this method allows you to access certain values in the database & do something them using a function passed as a parameter.
+- .on("value", fxn): this method allows you to access certain values in the database & do something with these values using a function passed as a parameter.
 
 ## Deploy your Note App!
 

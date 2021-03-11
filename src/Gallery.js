@@ -15,6 +15,7 @@ const Gallery = () => {
     "Raghuvara Padma",
     "Danny O'Shaughnessy",
     "Kendall Howard",
+    "Milen Patel",
     "William Mullen",
   ];
   const todo_apps = [
@@ -24,12 +25,20 @@ const Gallery = () => {
     "Shriya Mandal",
     "Raghuvara Padma",
     "Danny O'Shaughnessy",
+    "Milen Patel",
     "Kendall Howard",
   ];
   const endpoint_apps = [
     "Raghuvara Padma",
     "Danny O'Shaughnessy",
+    "Milen Patel",
     "Kendall Howard",
+  ];
+  const group_projects = [
+    "Raghuvara Padma",
+    "Danny O'Shaughnessy",
+    "Kendall Howard",
+    "Milen Patel",
   ];
   const note_apps = ["Kendall Howard"];
 
@@ -66,6 +75,13 @@ const Gallery = () => {
           <img src={notes} alt="note gif" />
           <h4>Completed by:</h4>
           {note_apps.map((person) => (
+            <li>{person}</li>
+          ))}
+        </div>
+        <div id="group-projects">
+          <h2>Group Projects</h2>
+          <h4>Completed by:</h4>
+          {group_projects.map((person) => (
             <li>{person}</li>
           ))}
         </div>
