@@ -7,10 +7,6 @@ The goals for you this week are as follows:
 - get comfortable with git
 - play around with customizing your site (font, css, info, etc)
 
-**Sat, Feb 6th recap**:
-- [Presentation Link](https://docs.google.com/presentation/d/1NdJ7YkG0gI1Y_6fuSNYmAz_eMBrlkNwAqs-E_RvkiOY/edit?usp=sharing)
-- [Recorded zoom video](https://unc.zoom.us/rec/share/TWcz4SirF7QXMxlsDc_zuk0j1clwYltHOrixitCyKf5E1BUZzUSZuXLpZacKTv2q.h69RCLWCeDhWwPE4) (passcode: @bGG5G$m) 
-
 ## Setting up your repo
 
 Requirements:
