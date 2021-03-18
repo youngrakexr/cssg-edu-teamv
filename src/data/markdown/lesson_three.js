@@ -6,12 +6,10 @@ Welcome to week 3! The goals for you are as follows:
 - start learning about http via Axios
 - continue handling user input
 - continue using a CSS framework (Bootstrap)
-- continue learning about React Hooks (useEffect) & asyncronous calls
-
-**Sat, Feb 20 Recap:**
+- continue learning about React Hooks (useEffect) & asynchronous calls
+- get practice working with other people
 
 - [Presentation Link](https://docs.google.com/presentation/d/1weIZ8i2Twn4Sr7L8FsYXE216a5y8Tyj72aoF3aJxhXA/edit?usp=sharing)
-- [Recorded zoom video](https://unc.zoom.us/rec/share/VIITeh4SYlMCkaB6eIfW9d2vCbnyajqHRo77aamsOYsc2GDMqjvT1MUBIIaFIQ6h.Ft-E5ZRr6yh8og8N) (Passcode: K02%MrhJ) 
 
 ## Setting up your repo
 
@@ -36,7 +34,7 @@ We are now moving on to some very real world applications: how do we grab and ha
 
 In this case, Axios is a module that facilitates this process. We can use its **get()** method, passing in an endpoint string and any other necessary arguments to easily fetch data. For example: **axios.get("https://www.google.com")** would try to grab any info stored on the Google homepage, which would just be html. As you can imagine, being able to use any URL on the internet as an endpoint could create some security risks. However, not all endpoints are created equal! You might need a specially generated API key to access certain data on the internet, or pass specific Headers / Arguments to get the right type of information back. For now, we're going to handle free APIs without a need for an API Key. To learn more about APIs, check [this out](https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/).
 
-Any function that calls axios will need to be declared as asynchronus. For now, think of this as JavaScript saying: "hmm, I have no idea how long it will take to do what this function wants, so I'm going to pause a bit to make sure it's done before I continue on to the next line of code." This is a major oversimplification of what's happening and if you want to go into more depth on Promises, async functions and threads, check out [this tutorial](https://blog.bitsrc.io/understanding-asynchronous-javascript-the-event-loop-74cd408419ff).
+Any function that calls axios will need to be declared as asynchronous. For now, think of this as JavaScript saying: "hmm, I have no idea how long it will take to do what this function wants, so I'm going to pause a bit to make sure it's done before I continue on to the next line of code." This is a major oversimplification of what's happening and if you want to go into more depth on Promises, async functions and threads, check out [this tutorial](https://blog.bitsrc.io/understanding-asynchronous-javascript-the-event-loop-74cd408419ff).
 
 As a result, 2 things need to happen to make fetching data work:
 
@@ -100,7 +98,32 @@ If you want a challenge:
 
 - Add the ability for a user to input an endpoint parameter (so the page updates with the info they desire) w/ Bootstrap
   - ex: Allow a user to specify the number of characters fetched
-- Display both images and text, using Boostrap Grid
+- Display both images and text, using Bootstrap Grid
+
+## Github Reviews + Management
+For this project, you have the option to work in a group or with a partner! In order to work on a project that is divided amongst group members, each person must be familiar with how to upload and download code from Github. Always download any code before uploading your own changes.
+
+### making a project repo
+the code for your group project will be based on project 4's base code. here's how to set up your project repo:
+- have one team member make a repo on github
+- in the repo settings, click "Manage Access" and then click "Invite a collaborator"
+- Add each teammates' github username 
+- To accept the invite, each member must go to their email and click the link github forwards them
+
+### downloading changes from github (always do this before uploading changes):
+- git pull origin master
+
+### uploading changes to github:
+- git checkout -b <branch-name> (ex: git checkout -b api-methods)
+- git add . or git add <file-name> (ex: git add src/list.js)
+- git commit -m "<message explaining what you changed>" (ex: git commit -m "added a Note component")
+- git push origin <branch-name> (ex: git push origin api-methods)
+
+### making a pull request:
+- go to the repo and click the green compare and make pull request button after uploading your changes
+- add a description for what you changed in the box on the left
+- click the **reviewers** title on the right and add the names of your teammates to check your code
+- finally, click the green make a pull request button
 `;
 
 export default lesson_three;
